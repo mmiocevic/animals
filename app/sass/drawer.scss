@@ -1,0 +1,54 @@
+.comp__drawer {
+   &__backdrop {
+      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0.8);
+
+      &--visible {
+         display: block;
+      }
+
+      .comp__drawer__inner {
+         width: 80%;
+         height: 100%;
+         background-color: #ffffff;
+         padding: 1rem;
+         overflow: auto;
+      }
+   }
+
+   &__icon {
+      &--open,
+      &--close {
+         div {
+            width: 1.6rem;
+            height: 0.2rem;
+            background-color: black;
+            margin: 0.3rem 0;
+         }
+      }
+
+      &--close {
+         div:first-child {
+            -webkit-transform: rotate(-45deg) translate(-0.38rem, 0.30rem);
+            transform: rotate(-45deg) translate(-0.38rem, 0.30rem);
+         }
+
+         div:nth-child(2) {
+            opacity: 0;
+         }
+
+         div:last-child {
+            -webkit-transform: rotate(45deg) translate(-0.38rem, -0.38rem);
+            transform: rotate(45deg) translate(-0.38rem, -0.38rem);
+         }
+
+         margin-bottom: 2rem;
+      }
+   }
+}

@@ -1,0 +1,28 @@
+.app {
+   &__header {
+      background-color: $greenish-light-color;
+   }
+
+   &__animal {
+      img {
+         display: block;
+         margin: 0 auto;
+         width: 100%;
+      }
+   }
+
+   &__statistics {
+      text-align: center;
+      border: 8px solid $redish-light-color;
+      display: flex;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      color: $redish-light-color;
+
+      p {
+         font-family: 'Roboto-Bold', sans-serif;
+      }
+   }
+}

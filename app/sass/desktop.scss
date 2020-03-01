@@ -1,0 +1,53 @@
+@media screen and (min-width: 768px) {
+   article {
+      margin-bottom: 32px;
+   }
+
+   .app {
+      max-width: 1280px;
+
+      &__header {
+         border-radius: 8px;
+         padding: 4px;
+         display: flex;
+
+         > .row {
+            padding: 0 8px;
+         }
+
+         #app__navigation__mobile {
+            display: none;
+         }
+
+         #app__navigation__desktop {
+            display: inline-block;
+            margin: auto;
+         }
+      }
+
+      &__logo {
+         display: block;
+         position: fixed;
+         z-index: 1;
+         background-color: $greenish-light-color;
+         border-radius: 8px;
+         height: 51px;
+
+         a {
+            height: 51px;
+            display: block;
+         }
+      }
+
+      &__statistics {
+         font-size: 20px;
+         width: 96px;
+         height: 96px;
+      }
+   }
+
+   #app__birds-carousel,
+   #app__wild-cats-carousel {
+      margin: 16px auto;
+   }
+}

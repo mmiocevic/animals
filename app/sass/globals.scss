@@ -1,0 +1,37 @@
+$greenish-regular-color: #2e8b57;
+$greenish-light-color: #c6e0cb;
+$redish-light-color: #cd5c5c;
+$brownish-regular-color: #444444;
+
+@font-face {
+   font-family: 'Roboto-Regular';
+   src: url('../assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+   font-family: 'Roboto-Bold';
+   src: url('../assets/fonts/Roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+   font-family: 'Lacquer-Regular';
+   src: url('../assets/fonts/Lacquer/Lacquer-Regular.ttf');
+}
+
+* {
+   box-sizing: border-box;
+}
+
+h1, h2, h3 {
+   font-family: 'Lacquer-Regular', sans-serif;
+}
+
+p, a, div {
+   font-family: 'Roboto-Regular', sans-serif;
+}
+
+.util {
+   &__text-center {
+      text-align: center;
+   }
+}

@@ -1,0 +1,36 @@
+article {
+   margin-bottom: 2rem;
+}
+
+.app {
+   &__header {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      padding: 1rem;
+
+      + div {
+         margin-top: 4rem;
+      }
+
+      #app__navigation__desktop {
+         display: none;
+      }
+   }
+
+   &__logo {
+      display: none;
+   }
+
+   &__statistics {
+      font-size: 1.3rem;
+      width: 6rem;
+      height: 6rem;
+   }
+}
+
+#app__birds-carousel,
+#app__wild-cats-carousel {
+   margin: 2rem auto;
+}

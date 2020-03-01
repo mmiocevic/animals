@@ -1,0 +1,53 @@
+.comp__carousel {
+   position: relative;
+   overflow: hidden;
+
+   &__image {
+      opacity: 0;
+      height: 0;
+      transition: opacity 1s ease-out;
+      overflow: hidden;
+
+      &--visible {
+         height: auto;
+         opacity: 1;
+      }
+
+      img {
+         max-width: 100%;
+         width: 100%;
+      }
+   }
+
+   &__button-left,
+   &__button-right {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      cursor: pointer;
+   }
+
+   &__button-left {
+      left: 10px;
+      border-width: 20px 20px 20px 0;
+      border-color: transparent #000000 transparent transparent;
+
+      &:hover {
+         border-right-color: $redish-light-color;
+      }
+   }
+
+   &__button-right {
+      right: 10px;
+      border-width: 20px 0px 20px 20px;
+      border-color: transparent transparent transparent #000000;
+
+      &:hover {
+         border-left-color: $redish-light-color;
+      }
+   }
+}

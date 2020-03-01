@@ -1,0 +1,53 @@
+.comp__accordion {
+   a {
+      text-decoration: none;
+      display: block;
+   }
+
+   &__item {
+      margin-bottom: 0.2rem;
+
+      &__leaf {
+         padding: 0.7rem;
+         background-color: $greenish-light-color;
+
+         a {
+            color: $greenish-regular-color;
+            width: 100%;
+         }
+      }
+
+      &__nested {
+         &__toggler {
+            padding: 0.7rem;
+            background-color: $greenish-light-color;
+            color: $greenish-regular-color;
+
+            &:after {
+               content: '';
+               float: right;
+               border-style: solid;
+               border-width: 6px 0 6px 6px;
+               border-color: transparent transparent transparent $greenish-regular-color;
+               position: relative;
+               top: 3px;
+            }
+
+            &--selected {
+               background-color: $redish-light-color;
+               color: $greenish-light-color;
+
+               &:after {
+                  content: '';
+                  border-width: 6px 6px 0 6px;
+                  border-color: $greenish-light-color transparent transparent transparent;
+               }
+            }
+         }
+
+         &__panel {
+            display: none;
+         }
+      }
+   }
+}

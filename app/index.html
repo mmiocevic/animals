@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+   <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+
+<div class="container app">
+   <header class="app__header">
+      <div class="app__logo">
+         <a href="index.html">
+            <img src="assets/logo/logo.png" alt="Animals" width="118" height="51">
+         </a>
+      </div>
+
+      <nav id="app__navigation__desktop">
+         <ul class="comp__dropdown">
+            <li class="comp__dropdown__item__root">
+               <div class="comp__dropdown__toggle">Animals</div>
+               <ul class="comp__dropdown__menu">
+                  <li class="comp__dropdown__item">
+                     <div class="comp__dropdown__toggle">Dogs</div>
+                     <ul class="comp__dropdown__menu">
+                        <li class="comp__dropdown__item comp__dropdown__item__leaf"><a href="#husky">Husky</a></li>
+                        <li class="comp__dropdown__item comp__dropdown__item__leaf"><a href="#jack_russell_terrier">Jack
+                           Russell Terrier</a></li>
+                     </ul>
+                  </li>
+                  <li class="comp__dropdown__item">
+                     <div class="comp__dropdown__toggle">Bugs</div>
+                     <ul class="comp__dropdown__menu">
+                        <li class="comp__dropdown__item comp__dropdown__item__leaf"><a href="#ladybug">Ladybug</a></li>
+                        <li class="comp__dropdown__item">
+                           <div class="comp__dropdown__toggle">Ant</div>
+                           <ul class="comp__dropdown__menu">
+                              <li class="comp__dropdown__item comp__dropdown__item__leaf"><a href="#fire_ant">Fire
+                                 Ant</a></li>
+                              <li class="comp__dropdown__item comp__dropdown__item__leaf"><a href="#bullet_ant">Bullet
+                                 Ant</a></li>
+                              <li class="comp__dropdown__item comp__dropdown__item__leaf"><a href="#electric_ant">Electric
+                                 Ant</a></li>
+                           </ul>
+                        </li>
+                        <li class="comp__dropdown__item comp__dropdown__item__leaf"><a href="#mosquito">Mosquito</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="comp__dropdown__item">
+                     <div class="comp__dropdown__toggle">Lvl 1</div>
+                     <ul class="comp__dropdown__menu">
+                        <li class="comp__dropdown__item comp__dropdown__item__leaf"><a href="#lvl_2_1">Lvl 2_1</a></li>
+                        <li class="comp__dropdown__item">
+                           <div class="comp__dropdown__toggle">Lvl 2_2</div>
+                           <ul class="comp__dropdown__menu">
+                              <li class="comp__dropdown__item comp__dropdown__item__leaf"><a href="#lvl_3_1">Lvl 3_1</a>
+                              </li>
+                              <li class="comp__dropdown__item comp__dropdown__item__leaf"><a href="#lvl_3_2">Lvl 3_2</a>
+                              </li>
+                              <li class="comp__dropdown__item comp__dropdown__item__leaf"><a href="#lvl_3_3">Lvl 3_3</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="comp__dropdown__item comp__dropdown__item__leaf"><a href="#lvl_2_3">Lvl 2_3</a></li>
+                     </ul>
+                  </li>
+                  <li class="comp__dropdown__item comp__dropdown__item__leaf"><a href="#lvl_1_only">Lvl 1 only</a></li>
+               </ul>
+            </li>
+            <li class="comp__dropdown__item__root"><a href="#about_us">About Us</a></li>
+            <li class="comp__dropdown__item__root"><a href="#contact_us">Contact Us</a></li>
+         </ul>
+      </nav>
+
+      <nav id="app__navigation__mobile">
+         <div class="comp__drawer">
+            <div class="comp__drawer__icon--open"></div>
+
+            <div class="comp__drawer__backdrop">
+               <div class="comp__drawer__inner">
+                  <div class="comp__drawer__icon--close"></div>
+
+                  <div id="app__menu__mobile">
+                     <div class="comp__accordion">
+                        <div class="comp__accordion__item comp__accordion__item__nested">
+                           <div class="comp__accordion__item__nested__toggler">Animals</div>
+                           <div class="comp__accordion__item__nested__panel">
+                              <div class="comp__accordion__item comp__accordion__item__nested">
+                                 <div class="comp__accordion__item__nested__toggler">Dogs</div>
+                                 <div class="comp__accordion__item__nested__panel">
+                                    <div class="comp__accordion__item comp__accordion__item__leaf"><a href="#husky">Husky</a>
+                                    </div>
+                                    <div class="comp__accordion__item comp__accordion__item__leaf"><a
+                                       href="#jack_russell_terrier">Jack
+                                       Russell Terrier</a></div>
+                                 </div>
+                              </div>
+                              <div class="comp__accordion__item comp__accordion__item__nested">
+                                 <div class="comp__accordion__item__nested__toggler">Bugs</div>
+                                 <div class="comp__accordion__item__nested__panel">
+                                    <div class="comp__accordion__item comp__accordion__item__leaf"><a href="#ladybug">Ladybug</a>
+                                    </div>
+                                    <div class="comp__accordion__item comp__accordion__item__nested">
+                                       <div class="comp__accordion__item__nested__toggler">Ant</div>
+                                       <div class="comp__accordion__item__nested__panel">
+                                          <div class="comp__accordion__item comp__accordion__item__leaf"><a
+                                             href="#fire_ant">Fire Ant</a></div>
+                                          <div class="comp__accordion__item comp__accordion__item__leaf"><a
+                                             href="#bullet_ant">Bullet Ant</a></div>
+                                          <div class="comp__accordion__item comp__accordion__item__leaf"><a
+                                             href="#electric_ant">Electric Ant</a></div>
+                                       </div>
+                                    </div>
+                                    <div class="comp__accordion__item comp__accordion__item__leaf"><a href="#mosquito">Mosquito</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="comp__accordion__item comp__accordion__item__nested">
+                                 <div class="comp__accordion__item__nested__toggler">Lvl 1</div>
+                                 <div class="comp__accordion__item__nested__panel">
+                                    <div class="comp__accordion__item comp__accordion__item__leaf"><a href="#lvl_2_1">Lvl
+                                       2_1</a></div>
+                                    <div class="comp__accordion__item comp__accordion__item__nested">
+                                       <div class="comp__accordion__item__nested__toggler">Lvl 2_2</div>
+                                       <div class="comp__accordion__item__nested__panel">
+                                          <div class="comp__accordion__item comp__accordion__item__leaf"><a
+                                             href="#lvl_3_1">Lvl 3_1</a></div>
+                                          <div class="comp__accordion__item comp__accordion__item__leaf"><a
+                                             href="#lvl_3_2">Lvl 3_2</a></div>
+                                          <div class="comp__accordion__item comp__accordion__item__leaf"><a
+                                             href="#lvl_3_2">Lvl 3_3</a></div>
+                                       </div>
+                                    </div>
+                                    <div class="comp__accordion__item comp__accordion__item__leaf"><a href="#lvl_2_3">Lvl
+                                       2_3</a></div>
+                                 </div>
+                              </div>
+                              <div class="comp__accordion__item comp__accordion__item__leaf"><a href="#lvl_1_only">Lvl 1
+                                 only</a></div>
+                           </div>
+                        </div>
+                        <div class="comp__accordion__item comp__accordion__item__leaf"><a href="#about_us">About Us</a>
+                        </div>
+                        <div class="comp__accordion__item comp__accordion__item__leaf"><a href="#contact_us">Contact
+                           Us</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <div class="row">
+      <div class="col-md-8 app__main">
+         <h1 class="util__text-center">Lorem ipsum dolor sit amet</h1>
+
+         <article>
+            <div class="row">
+               <div class="col-md-6">
+                  <h2>Zebra</h2>
+                  <p>Nam volutpat dignissim ex, blandit rhoncus lorem pharetra quis. Donec iaculis faucibus sem ut
+                     vestibulum.
+                     Ut viverra quam interdum ante ullamcorper, vitae pharetra orci semper. Pellentesque habitant morbi
+                     tristique senectus et netus et.
+                  </p>
+               </div>
+
+               <div class="col-md-6">
+                  <div class="app__animal">
+                     <img width="200" src="assets/images/animals/zebra/zebra.jpg" alt="Zebra">
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article>
+            <div class="row">
+               <div class="col-md-6 order-md-2">
+                  <h2>Great White Shark</h2>
+                  <p>Pellentesque maximus, sapien sit amet malesuada consequat, neque neque hendrerit lorem, eu vehicula
+                     dolor justo et est. Vestibulum mollis porta enim, quis ornare nunc cursus elementum.
+                  </p>
+               </div>
+
+               <div class="col-md-6 order-md-1">
+                  <div class="app__animal">
+                     <img width="200" src="assets/images/animals/white-shark/white-shark.jpg" alt="White shark">
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article>
+            <div class="row">
+               <div class="col-md-6">
+                  <h2>Penguin</h2>
+                  <p>Curabitur elementum ultrices turpis, eu faucibus eros aliquet non. Phasellus eleifend ullamcorper
+                     condimentum. Donec placerat lectus sed eros cursus, quis vestibulum nisl gravida. Suspendisse
+                     condimentum felis at convallis porttitor. Nullam ex nunc, tempus id lectus at, mattis fermentum
+                     tellus. Donec nec felis facilisis, efficitur turpis non, bibendum felis. Sed vitae dui vitae mi
+                     vestibulum eleifend et ac lacus. Nullam.</p>
+               </div>
+
+               <div class="col-md-6">
+                  <div class="app__animal">
+                     <img width="200" src="assets/images/animals/penguin/penguin.jpg" alt="Penguin">
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article>
+            <h3 class="util__text-center">Proin maximus mi at mollis commodo. Nunc rutrum, est id malesuada maximus,
+               orci
+               lorem dictum sapien, at porta leo massa eu lacus. Pellentesque pulvinar mauris ut auctor rhoncus. Cras
+               feugiat auctor lacus. Donec fermentum fermentum neque, at pharetra ex. Integer nec scelerisque nulla.
+               Vestibulum semper nulla ante, a dignissim.
+            </h3>
+
+            <div class="row">
+               <div class="col">
+                  <div class="app__statistics">
+                     <p>54571</p>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="app__statistics">
+                     <p>33.17%</p>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="app__statistics">
+                     <p>3 / 100</p>
+                  </div>
+               </div>
+            </div>
+         </article>
+      </div>
+
+      <div class="col-md-4 app__secondary">
+         <div id="app__birds-carousel" class="comp__carousel">
+            <div class="comp__carousel__image">
+               <img src="assets/images/animals/toucan/toucan.jpg" alt="Toucan">
+            </div>
+
+            <div class="comp__carousel__image">
+               <img src="assets/images/animals/eagle/eagle.jpg" alt="Eagle">
+            </div>
+
+            <div class="comp__carousel__image">
+               <img src="assets/images/animals/owl/owl.jpg" alt="Owl">
+            </div>
+         </div>
+
+         <div id="app__wild-cats-carousel" class="comp__carousel">
+            <div class="comp__carousel__image">
+               <img src="assets/images/animals/lion/lion.jpg" alt="Lion">
+            </div>
+
+            <div class="comp__carousel__image">
+               <img src="assets/images/animals/tiger/tiger.jpg" alt="Tiger">
+            </div>
+
+            <div class="comp__carousel__image">
+               <img src="assets/images/animals/cheetah/cheetah.jpg" alt="Cheetah">
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<script src="js/app.min.js"></script>
+</body>
+</html>
